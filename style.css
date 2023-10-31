@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/*
+1> display flex applied on parent.
+2> There are two direction i> row ii> column.
+3> By default flex direction is row.
+4> We can change flex direction by property 'flex-direction:"main-axis(flex ke direction ko hi main axis bolte h)/cross-axis.
+5> The direction of flex is known as main-axis and the opposite directiomn is known as cross-axis.
+6> flex work on single direction a ta row or coloumn.  
+7> also use row-revers and coloumn reverse
+8> flex direction == main axis ---> justify content(main-axis pe ye proparty kaam karti h)
+opposite to flex direction == cross-axis --> align-item(cross axis p ye proparty kaam karegi)
+*/
+.parent{
+    width: 100%;
+    height: 50%;
+    background-color: indigo;
+    display: flex;
+    flex-direction: row;
+    /* by default rahte h  */
+    justify-content: space-between;
+    /* justify-content: start/end/center/space-around/space-between; */
+    align-items: center;
+    /* align-item: start/center/end */
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: orange; 
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(21, 255, 0);
+
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 38);
+
+}
